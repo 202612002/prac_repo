@@ -1,0 +1,28 @@
+# List all databases
+--> \l or \list
+
+# Create a database
+--> CREATE DATABASE db_name;
+
+# Connect (Select) a database
+--> \c db_name
+
+# Check current database
+--> SELECT current_database();
+
+# Delete a database
+--> DROP DATABASE db_name;
+
+# List all tables
+--> \dt
+
+# Create a table
+--> CREATE TABLE table_name(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    city VARCHAR(50)
+    );
+
+# Describe table
+--> \d table_name or \d+ table_name
